@@ -1,0 +1,72 @@
+[
+  {
+    "group": "Programming",
+    "icon": "code",
+    "items": [
+      "Python",
+      "SQL (CTEs, Window Functions)",
+      "C++",
+      "R",
+      "Shell Scripting"
+    ]
+  },
+  {
+    "group": "Data Engineering",
+    "icon": "database",
+    "items": [
+      "ETL / ELT Pipelines",
+      "Star & Snowflake Schemas",
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "REST APIs"
+    ]
+  },
+  {
+    "group": "AI & Analytics",
+    "icon": "spark",
+    "items": [
+      "Agentic AI",
+      "LangGraph",
+      "RAG",
+      "Prompt Engineering",
+      "LLM Automation",
+      "NLP",
+      "Statistical Modeling",
+      "EDA",
+      "n8n"
+    ]
+  },
+  {
+    "group": "Python Libraries",
+    "icon": "layers",
+    "items": [
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Plotly",
+      "Streamlit",
+      "Gradio"
+    ]
+  },
+  {
+    "group": "BI & Visualisation",
+    "icon": "chart",
+    "items": [
+      "Power BI (DAX, Power Query)",
+      "Tableau",
+      "MS Excel (VBA)"
+    ]
+  },
+  {
+    "group": "DevOps & Tools",
+    "icon": "tools",
+    "items": [
+      "Git / GitHub",
+      "Docker",
+      "GitHub Actions",
+      "Render",
+      "Hugging Face Spaces"
+    ]
+  }
+]

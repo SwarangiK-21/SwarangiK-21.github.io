@@ -1,0 +1,23 @@
+[
+  {
+    "role": "Data Analyst Intern",
+    "company": "Krios Info Solutions Pvt. Ltd.",
+    "location": "Pune, India",
+    "start": "May 2026",
+    "end": "Present",
+    "type": "Internship",
+    "points": [
+      "Designed and developed enterprise dashboards in Tableau and Power BI for clients including Cummins India and Yazaki, converting complex business data into actionable KPI-driven insights.",
+      "Worked as a Solution Architect, translating client requirements into scalable analytical solutions.",
+      "Built Python/SQL data pipelines for data cleaning, transformation, validation and automated reporting workflows.",
+      "Collaborated with clients and cross-functional teams to understand business processes and deliver tailored solutions.",
+      "Automated recurring reporting and data workflows, improving efficiency and reliability."
+    ],
+    "tech": [
+      "Tableau",
+      "Power BI",
+      "Python",
+      "SQL"
+    ]
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "title": "NyaySutra AI",
+    "tagline": "Agentic RAG legal assistant for Indian advocates",
+    "description": "Upload a case's documents, then research, summarise, build timelines and draft. Every answer is grounded in your own files and in official bare acts, with numbered citations and an automatic citation audit.",
+    "points": [
+      "Reads PDFs (including scans), Word files and images in English, Hindi and Marathi, with translation and structured summaries.",
+      "Streaming legal research answers with [n] citations, checked against the source text.",
+      "Case files, case search by CNR / FIR / case number, and document intelligence in one workspace."
+    ],
+    "tech": [
+      "Python",
+      "RAG",
+      "LLMs",
+      "NLP",
+      "OCR"
+    ],
+    "category": "AI & Agents",
+    "github": "https://github.com/SwarangiK-21/NyaySutra-AI",
+    "demo": "",
+    "image": "",
+    "status": "",
+    "featured": true,
+    "show": true
+  },
+  {
+    "title": "LUMINA: AI DevOps Troubleshooter",
+    "tagline": "Diagnose, research, fix, verify, autonomously",
+    "description": "An agentic AI system that solves DevOps, cloud and software errors. It classifies the error, researches live documentation, writes a fix, and runs a self-review loop that sends risky answers back for more research before showing them.",
+    "points": [
+      "Stateful LangGraph agent: Classifier → Researcher → Coder → Reviewer → Router.",
+      "Real-time web grounding with Tavily AI and Gemini 2.5 Flash.",
+      "Streamlit interface built around progressive disclosure of technical detail."
+    ],
+    "tech": [
+      "Python",
+      "LangGraph",
+      "Gemini",
+      "Tavily",
+      "Streamlit"
+    ],
+    "category": "AI & Agents",
+    "github": "https://github.com/SwarangiK-21/Lumina-AI-DevOps",
+    "demo": "",
+    "image": "",
+    "status": "",
+    "featured": true,
+    "show": true
+  },
+  {
+    "title": "CodeSynapse: AI Career Architect",
+    "tagline": "AI-powered career analytics dashboard for CS students",
+    "description": "Pulls live coding stats from GitHub, LeetCode and GeeksforGeeks into one dashboard, scores competencies on a radar chart, and includes a Gemini-powered career coach that knows your actual stats.",
+    "points": [
+      "Multi-platform profile sync and a 0–100 competency score per platform.",
+      "AI coach falls back across four Gemini model variants so it keeps responding under quota limits.",
+      "One-click PDF career report generated with ReportLab."
+    ],
+    "tech": [
+      "Python",
+      "Gradio",
+      "Gemini",
+      "Plotly",
+      "Hugging Face"
+    ],
+    "category": "AI & Agents",
+    "github": "https://github.com/SwarangiK-21/CodeSynapse",
+    "demo": "https://huggingface.co/spaces/SwarangiK-21/CodeSynapse",
+    "image": "assets/img/projects/codesynapse.jpg",
+    "status": "",
+    "featured": true,
+    "show": true
+  },
+  {
+    "title": "TrendPulse",
+    "tagline": "Real-time brand intelligence & sentiment analytics",
+    "description": "A brand tracking tool that correlates social media sentiment with sales data for real-time ROI analysis, turning unstructured social chatter into business signals.",
+    "points": [
+      "Automated SQL/Pandas ETL pipeline that quantifies customer confidence metrics via NLP.",
+      "Optimised performance by 40% using Streamlit caching for high-volume datasets.",
+      "Platform filters (Instagram, Twitter, Reddit), revenue trajectory and sentiment deep-dive views."
+    ],
+    "tech": [
+      "Python",
+      "SQL",
+      "NLP",
+      "Pandas",
+      "Streamlit",
+      "Plotly"
+    ],
+    "category": "Data & BI",
+    "github": "https://github.com/SwarangiK-21/TrendPulse",
+    "demo": "https://ht85kr9hvauxnnjaa8odye.streamlit.app/",
+    "image": "assets/img/projects/trendpulse.jpg",
+    "status": "",
+    "featured": true,
+    "show": true
+  },
+  {
+    "title": "Real-Time Stock Anomaly Detector",
+    "tagline": "Live market monitoring with sliding-window Z-scores",
+    "description": "A real-time financial analytics service that fetches live ticker data and flags statistically significant price deviations, containerised with Docker and deployed through a CI/CD pipeline.",
+    "points": [
+      "20-day sliding-window Z-score detection that adapts to market volatility.",
+      "Docker container deployed on Render with GitHub Actions CI/CD.",
+      "Yahoo Finance API integration visualising live tickers (AAPL, TSLA) for 50+ concurrent users."
+    ],
+    "tech": [
+      "Python",
+      "Docker",
+      "Scikit-learn",
+      "GitHub Actions",
+      "Streamlit"
+    ],
+    "category": "Machine Learning",
+    "github": "https://github.com/SwarangiK-21/Stock-Anomaly-Detector",
+    "demo": "https://stock-anomaly-detector.onrender.com",
+    "image": "assets/img/projects/stock-anomaly-detector.jpg",
+    "status": "",
+    "featured": true,
+    "show": true
+  },
+  {
+    "title": "SENTINEL: Urban Conflict Resolver",
+    "tagline": "Code4Society hackathon finalist project",
+    "description": "An AI dashboard that detects when city departments (water, electricity, transport, telecom) plan to use the same space at the same time, scores each conflict, predicts new ones before approval and suggests how to resolve them.",
+    "points": [
+      "Conflict detection using time and geospatial overlap, with a severity score.",
+      "Random Forest model predicts whether a new request will conflict before it is approved.",
+      "Conflict network graph (NetworkX) and map view, plus reschedule / relocate suggestions."
+    ],
+    "tech": [
+      "Python",
+      "Streamlit",
+      "Random Forest",
+      "NetworkX"
+    ],
+    "category": "Machine Learning",
+    "github": "https://github.com/SwarangiK-21/SENTINEL-Urban-Conflict-Resolver",
+    "demo": "https://sentinel-urban-conflict-resolver-m4uuejrrhb2reahiamyaoa.streamlit.app/",
+    "image": "",
+    "status": "",
+    "featured": false,
+    "show": true
+  },
+  {
+    "title": "EduFlow ERP",
+    "tagline": "AI-assisted internship & NOC/LOR approval workflow",
+    "description": "A working prototype that automates internship applications and NOC/LOR approvals through a structured chain: Class Teacher → HOD → TnP Head → IIIC Director, with analytics dashboards on top of the approved data.",
+    "points": [
+      "Role-based student and faculty portals for applying, approving and reporting outcomes.",
+      "SQL analytics views feeding KPI dashboards, with export for Power BI / Tableau.",
+      "Exploring an n8n agent workflow for request handling and process automation."
+    ],
+    "tech": [
+      "Python",
+      "SQL",
+      "n8n",
+      "Claude",
+      "Plotly"
+    ],
+    "category": "AI & Agents",
+    "github": "",
+    "demo": "",
+    "image": "",
+    "status": "In progress",
+    "featured": false,
+    "show": true
+  },
+  {
+    "title": "KavachAI",
+    "tagline": "On-device shield against AI voice-spoofing calls",
+    "description": "Built for the Srijan Hackathon. A privacy-first security layer that judges whether an incoming call is genuine using behaviour, not caller ID, with everything running on the device.",
+    "points": [
+      "Isolation Forest model trained on call time, duration, frequency and origin.",
+      "Local SQLite vault stores trusted-contact baselines; no call data leaves the device.",
+      "Flet dashboard shows Verified / Alert / Unknown with an explanation for each alert."
+    ],
+    "tech": [
+      "Python",
+      "Isolation Forest",
+      "SQLite",
+      "Flet"
+    ],
+    "category": "Machine Learning",
+    "github": "https://github.com/SwarangiK-21/KavachAI-Srijan_Hackathon",
+    "demo": "",
+    "image": "",
+    "status": "",
+    "featured": false,
+    "show": true
+  },
+  {
+    "title": "Project Drishti",
+    "tagline": "UIDAI Hackathon 2026: Aadhaar governance dashboard",
+    "description": "A data-driven governance analysis of Aadhaar activity (synthetic / anonymised data) that surfaces operational bottlenecks, regional hotspots and inclusion risks, with recommendations for resource allocation.",
+    "points": [
+      "Spatiotemporal anomaly detection across enrolment and update records.",
+      "Identified weekday load spikes and high-load pincodes, with suggested interventions.",
+      "Visual intelligence gallery of donut charts, treemaps and compliance rankings."
+    ],
+    "tech": [
+      "Python",
+      "Pandas",
+      "Jupyter",
+      "Data Visualisation"
+    ],
+    "category": "Data & BI",
+    "github": "https://github.com/SwarangiK-21/UIDAI-Hackathon-2026",
+    "demo": "",
+    "image": "",
+    "status": "",
+    "featured": false,
+    "show": true
+  },
+  {
+    "title": "Stakeholder Insights Dashboard",
+    "tagline": "Tableau dashboard for premium, profitability and policy performance",
+    "description": "An interactive Tableau dashboard giving stakeholders and insurers a single source of truth for premium trends, profitability, shareholding and assets under management.",
+    "points": [
+      "KPIs for total premium, value created and top-performing insurer.",
+      "Filters by city, stakeholder, policy tenure and date range."
+    ],
+    "tech": [
+      "Tableau",
+      "Data Visualisation"
+    ],
+    "category": "Data & BI",
+    "github": "https://github.com/SwarangiK-21/Stakeholder-Insights-and-Performance-Dashboard-Tableau-",
+    "demo": "",
+    "image": "",
+    "status": "",
+    "featured": false,
+    "show": true
+  },
+  {
+    "title": "Road Accident Analysis",
+    "tagline": "Interactive Excel dashboard for 2021–2022 accident trends",
+    "description": "A dynamic Excel dashboard that analyses road accident trends across 2021 and 2022, with slicers to compare rural and urban areas and spot high-risk periods.",
+    "points": [
+      "Pivot tables, slicers and advanced charting, built entirely in Excel.",
+      "Kaggle demo dataset, structured around specific road-safety business questions."
+    ],
+    "tech": [
+      "Excel",
+      "Pivot Tables"
+    ],
+    "category": "Data & BI",
+    "github": "https://github.com/SwarangiK-21/Road-Accident-Analysis",
+    "demo": "",
+    "image": "",
+    "status": "",
+    "featured": false,
+    "show": true
+  },
+  {
+    "title": "Secure Tool",
+    "tagline": "Encryption & decryption app with a Tkinter GUI",
+    "description": "A Python desktop application for encoding and decoding messages with a custom key, with user accounts, passkey strength checks and an action history.",
+    "points": [
+      "Account-based login, custom-key encoding and passkey strength analysis.",
+      "History of encryption and decryption actions."
+    ],
+    "tech": [
+      "Python",
+      "Tkinter"
+    ],
+    "category": "Other",
+    "github": "https://github.com/SwarangiK-21/Encryption-Decryption-Project",
+    "demo": "",
+    "image": "",
+    "status": "",
+    "featured": false,
+    "show": true
+  },
+  {
+    "title": "Adaa",
+    "tagline": "Personal wardrobe stylist that only uses clothes you own",
+    "description": "Photograph and register your own clothes and accessories, then get complete outfit suggestions for any occasion, in English or Hinglish, by text or voice. Includes a wedding-function planner and festival colour styling.",
+    "points": [
+      "Up to 4 outfit suggestions per request, with reasons and honest cautions.",
+      "Runs fully on your own computer with free, open-source tools."
+    ],
+    "tech": [
+      "React",
+      "Vite",
+      "FastAPI",
+      "SQLite"
+    ],
+    "category": "Other",
+    "github": "",
+    "demo": "",
+    "image": "",
+    "status": "",
+    "featured": false,
+    "show": false
+  }
+]

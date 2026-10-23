@@ -1,0 +1,18 @@
+[
+  {
+    "institution": "Pimpri Chinchwad University (PCU)",
+    "location": "Pune",
+    "degree": "B.Tech in Computer Science Engineering (AI & Data Science)",
+    "start": "2023",
+    "end": "2027",
+    "score": "CGPA: 8.3 / 10"
+  },
+  {
+    "institution": "Vidya Valley",
+    "location": "Pune",
+    "degree": "Higher Secondary Certificate (HSC)",
+    "start": "2021",
+    "end": "2023",
+    "score": "76%"
+  }
+]

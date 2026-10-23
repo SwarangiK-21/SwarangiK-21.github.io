@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Finalist: PROTECH 2025",
+    "detail": "National-level project competition at Symbiosis Institute of Technology.",
+    "year": "2025",
+    "icon": "trophy",
+    "link": ""
+  },
+  {
+    "title": "Finalist: Code4Society Hackathon",
+    "detail": "3-day hackathon conducted via Samsung Innovation Campus (SIC). Built SENTINEL, an urban resource conflict resolver.",
+    "year": "",
+    "icon": "trophy",
+    "link": "https://github.com/SwarangiK-21/SENTINEL-Urban-Conflict-Resolver"
+  },
+  {
+    "title": "Python & DSA Training",
+    "detail": "Completed intensive Python and Data Structures & Algorithms training via Samsung Innovation Campus (SIC).",
+    "year": "",
+    "icon": "book",
+    "link": ""
+  },
+  {
+    "title": "HackerRank: 5★ Python",
+    "detail": "5-star badges in Python, 30 Days of Code and 10 Days of Statistics; 3-star in Problem Solving.",
+    "year": "",
+    "icon": "star",
+    "link": "https://www.hackerrank.com/profile/swarangikothawa1"
+  }
+]
