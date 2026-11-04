@@ -1,18 +1,19 @@
 [
   {
     "title": "NyaySutra AI",
-    "tagline": "Agentic RAG legal assistant for Indian advocates",
+    "tagline": "Agentic RAG legal assistant for Indian advocates (team project)",
     "description": "Upload a case's documents, then research, summarise, build timelines and draft. Every answer is grounded in your own files and in official bare acts, with numbered citations and an automatic citation audit.",
     "points": [
       "Reads PDFs (including scans), Word files and images in English, Hindi and Marathi, with translation and structured summaries.",
       "Streaming legal research answers with [n] citations, checked against the source text.",
-      "Case files, case search by CNR / FIR / case number, and document intelligence in one workspace."
+      "Case files, case search by CNR / FIR / case number, and document intelligence in one workspace.",
+      "Citation-audited answers on the project benchmark raised from 40% to 74% (31 of 42)."
     ],
     "tech": [
       "Python",
+      "FastAPI",
       "RAG",
-      "LLMs",
-      "NLP",
+      "Supabase",
       "OCR"
     ],
     "category": "AI & Agents",
@@ -25,12 +26,12 @@
   },
   {
     "title": "LUMINA: AI DevOps Troubleshooter",
-    "tagline": "Diagnose, research, fix, verify, autonomously",
-    "description": "An agentic AI system that solves DevOps, cloud and software errors. It classifies the error, researches live documentation, writes a fix, and runs a self-review loop that sends risky answers back for more research before showing them.",
+    "tagline": "Diagnose, research, propose, review",
+    "description": "An agentic AI system for DevOps, cloud and software errors. It classifies the error, researches current sources, drafts a fix, and a reviewer step sends weak drafts back with feedback. It proposes fixes; it never runs them.",
     "points": [
-      "Stateful LangGraph agent: Classifier → Researcher → Coder → Reviewer → Router.",
-      "Real-time web grounding with Tavily AI and Gemini 2.5 Flash.",
-      "Streamlit interface built around progressive disclosure of technical detail."
+      "LangGraph state machine: Classifier → Researcher → Coder → Reviewer, with a review loop of up to 3 passes.",
+      "Web grounding with Tavily and Gemini; sources are listed with every fix.",
+      "50-case hand-labelled benchmark with rule-based scoring, automated tests, Docker and CI."
     ],
     "tech": [
       "Python",
@@ -50,18 +51,19 @@
   {
     "title": "CodeSynapse: AI Career Architect",
     "tagline": "AI-powered career analytics dashboard for CS students",
-    "description": "Pulls live coding stats from GitHub, LeetCode and GeeksforGeeks into one dashboard, scores competencies on a radar chart, and includes a Gemini-powered career coach that knows your actual stats.",
+    "description": "Pulls live GitHub and LeetCode stats into one dashboard with a Gemini career coach, and a LangGraph skill-gap agent that compares your repositories with a job description and cites the exact lines that prove each skill.",
     "points": [
-      "Multi-platform profile sync and a 0–100 competency score per platform.",
-      "AI coach falls back across four Gemini model variants so it keeps responding under quota limits.",
-      "One-click PDF career report generated with ReportLab."
+      "Skill-gap agent with a deterministic verifier: every claim must quote real code at the cited lines.",
+      "On the hard benchmark, F1 0.91 vs 0.77 for a single-prompt baseline; 8 of 8 prompt-injection attacks blocked.",
+      "Hybrid code search (Tree-sitter, BM25, pgvector), FastAPI REST API, tests and CI."
     ],
     "tech": [
       "Python",
-      "Gradio",
+      "LangGraph",
       "Gemini",
-      "Plotly",
-      "Hugging Face"
+      "FastAPI",
+      "Gradio",
+      "PostgreSQL"
     ],
     "category": "AI & Agents",
     "github": "https://github.com/SwarangiK-21/CodeSynapse",
@@ -73,12 +75,12 @@
   },
   {
     "title": "TrendPulse",
-    "tagline": "Real-time brand intelligence & sentiment analytics",
-    "description": "A brand tracking tool that correlates social media sentiment with sales data for real-time ROI analysis, turning unstructured social chatter into business signals.",
+    "tagline": "Brand sentiment & revenue analytics pipeline",
+    "description": "An end-to-end analytics demo on synthetic data: generates sales and social posts, scores sentiment with TextBlob, stores everything in SQLite and serves it through a Streamlit app and a Power BI dashboard.",
     "points": [
-      "Automated SQL/Pandas ETL pipeline that quantifies customer confidence metrics via NLP.",
-      "Optimised performance by 40% using Streamlit caching for high-volume datasets.",
-      "Platform filters (Instagram, Twitter, Reddit), revenue trajectory and sentiment deep-dive views."
+      "SQLAlchemy + Pandas pipeline that scores post sentiment with TextBlob.",
+      "Streamlit dashboard with platform filters, revenue trajectory and a sentiment deep-dive.",
+      "The same data exported to a Power BI report."
     ],
     "tech": [
       "Python",
@@ -97,19 +99,19 @@
     "show": true
   },
   {
-    "title": "Real-Time Stock Anomaly Detector",
-    "tagline": "Live market monitoring with sliding-window Z-scores",
-    "description": "A real-time financial analytics service that fetches live ticker data and flags statistically significant price deviations, containerised with Docker and deployed through a CI/CD pipeline.",
+    "title": "Stock Anomaly Detector",
+    "tagline": "Rolling 20-day Z-score anomaly detection on daily prices",
+    "description": "A Streamlit dashboard that fetches two years of daily prices from Yahoo Finance, flags closes more than three standard deviations from the 20-day rolling mean, and keeps a SQLite history of anomalies. Packaged with Docker and deployed on Render.",
     "points": [
-      "20-day sliding-window Z-score detection that adapts to market volatility.",
-      "Docker container deployed on Render with GitHub Actions CI/CD.",
-      "Yahoo Finance API integration visualising live tickers (AAPL, TSLA) for 50+ concurrent users."
+      "20-day sliding-window Z-score detection (|Z| > 3).",
+      "Anomalies stored once each in SQLite and shown as a history table.",
+      "Docker image deployed on Render."
     ],
     "tech": [
       "Python",
+      "Pandas",
+      "yfinance",
       "Docker",
-      "Scikit-learn",
-      "GitHub Actions",
       "Streamlit"
     ],
     "category": "Machine Learning",
@@ -169,8 +171,8 @@
   },
   {
     "title": "KavachAI",
-    "tagline": "On-device shield against AI voice-spoofing calls",
-    "description": "Built for the Srijan Hackathon. A privacy-first security layer that judges whether an incoming call is genuine using behaviour, not caller ID, with everything running on the device.",
+    "tagline": "Behaviour-based detection of fake calls from known contacts",
+    "description": "Built for the Srijan Hackathon. A privacy-first prototype that judges whether a call from a known contact looks genuine using calling behaviour (time, duration, frequency, origin), not caller ID, with everything running locally. Trained on synthetic data.",
     "points": [
       "Isolation Forest model trained on call time, duration, frequency and origin.",
       "Local SQLite vault stores trusted-contact baselines; no call data leaves the device.",
@@ -193,7 +195,7 @@
   {
     "title": "Project Drishti",
     "tagline": "UIDAI Hackathon 2026: Aadhaar governance dashboard",
-    "description": "A data-driven governance analysis of Aadhaar activity (synthetic / anonymised data) that surfaces operational bottlenecks, regional hotspots and inclusion risks, with recommendations for resource allocation.",
+    "description": "A UIDAI Hackathon analysis of about 4.9 million aggregated Aadhaar enrolment and update records that surfaces operational bottlenecks, regional hotspots and compliance gaps, with recommendations for resource allocation.",
     "points": [
       "Spatiotemporal anomaly detection across enrolment and update records.",
       "Identified weekday load spikes and high-load pincodes, with suggested interventions.",
@@ -288,11 +290,11 @@
       "SQLite"
     ],
     "category": "Other",
-    "github": "",
+    "github": "https://github.com/SwarangiK-21/Adaa-",
     "demo": "",
     "image": "",
     "status": "",
     "featured": false,
-    "show": false
+    "show": true
   }
 ]
