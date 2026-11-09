@@ -50,6 +50,7 @@ const CATEGORY_STYLE = {
   'AI & Agents': { icon: 'spark', c1: '#8b5cf6', c2: '#2dd4bf' },
   'Data & BI': { icon: 'chart', c1: '#f5b14c', c2: '#38bdf8' },
   'Machine Learning': { icon: 'cpu', c1: '#38bdf8', c2: '#22c55e' },
+  'Full-Stack': { icon: 'code', c1: '#a855f7', c2: '#f5b14c' },
   Other: { icon: 'code', c1: '#f472b6', c2: '#2dd4bf' },
 };
 
