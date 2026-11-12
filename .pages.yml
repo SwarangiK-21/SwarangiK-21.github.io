@@ -74,7 +74,7 @@ content:
       - name: category
         type: select
         options:
-          values: ["AI & Agents", "Data & BI", "Machine Learning", "Other"]
+          values: ["AI & Agents", "Full-Stack", "Data & BI", "Machine Learning", "Other"]
       - { name: github, label: GitHub URL, type: string }
       - { name: demo, label: Live demo URL, type: string }
       - { name: image, label: Screenshot, type: image, description: "16:9 screenshot. Leave empty for automatic cover art." }

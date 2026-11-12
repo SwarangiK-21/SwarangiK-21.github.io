@@ -1,25 +1,27 @@
 [
   {
     "title": "NyaySutra AI",
-    "tagline": "Agentic RAG legal assistant for Indian advocates (team project)",
-    "description": "Upload a case's documents, then research, summarise, build timelines and draft. Every answer is grounded in your own files and in official bare acts, with numbered citations and an automatic citation audit.",
+    "tagline": "Agentic RAG legal-research assistant for Indian advocates (team project with Suraj Madane)",
+    "description": "A secure, explainable legal-research assistant: agentic RAG over official bare acts and your own case files, where every answer is cited and every citation is checked against the source text.",
     "points": [
-      "Reads PDFs (including scans), Word files and images in English, Hindi and Marathi, with translation and structured summaries.",
-      "Streaming legal research answers with [n] citations, checked against the source text.",
-      "Case files, case search by CNR / FIR / case number, and document intelligence in one workspace.",
-      "Citation-audited answers on the project benchmark raised from 40% to 74% (31 of 42)."
+      "Hybrid retrieval: exact section lookup + BM25 + dense embeddings, fused and reranked; 31 indexed bare acts.",
+      "Citation-audited answers on the project benchmark raised from 40% to 74% (31 of 42).",
+      "Reads 21 file types, including scanned Hindi/Marathi papers via built-in OCR; drafting studio with 22 templates.",
+      "Supabase Postgres with row-level security, TOTP two-step sign-in, AI guardrails and an audit log; 131 offline tests."
     ],
     "tech": [
       "Python",
       "FastAPI",
       "RAG",
+      "Ollama",
       "Supabase",
-      "OCR"
+      "RapidOCR",
+      "pytest"
     ],
     "category": "AI & Agents",
     "github": "https://github.com/SwarangiK-21/NyaySutra-AI",
     "demo": "",
-    "image": "",
+    "image": "assets/img/projects/nyaysutra.jpg",
     "status": "",
     "featured": true,
     "show": true
@@ -27,11 +29,11 @@
   {
     "title": "LUMINA: AI DevOps Troubleshooter",
     "tagline": "Diagnose, research, propose, review",
-    "description": "An agentic AI system for DevOps, cloud and software errors. It classifies the error, researches current sources, drafts a fix, and a reviewer step sends weak drafts back with feedback. It proposes fixes; it never runs them.",
+    "description": "An agentic AI system for DevOps, cloud and software errors. A LangGraph pipeline classifies the error, researches current sources with Tavily, drafts a fix with Gemini, and a reviewer step sends weak drafts back for more research.",
     "points": [
-      "LangGraph state machine: Classifier → Researcher → Coder → Reviewer, with a review loop of up to 3 passes.",
-      "Web grounding with Tavily and Gemini; sources are listed with every fix.",
-      "50-case hand-labelled benchmark with rule-based scoring, automated tests, Docker and CI."
+      "LangGraph state machine: Classifier → Researcher → Coder → Reviewer → Router, with a feedback loop.",
+      "Web grounding with Tavily; Streamlit interface.",
+      "Upgrade in review on the phase branches: package structure, tests with fake LLM/search, Docker, CI and a 50-case hand-labelled benchmark with rule-based scoring."
     ],
     "tech": [
       "Python",
@@ -44,18 +46,18 @@
     "github": "https://github.com/SwarangiK-21/Lumina-AI-DevOps",
     "demo": "",
     "image": "",
-    "status": "",
+    "status": "Upgrade in review",
     "featured": true,
     "show": true
   },
   {
     "title": "CodeSynapse: AI Career Architect",
     "tagline": "AI-powered career analytics dashboard for CS students",
-    "description": "Pulls live GitHub and LeetCode stats into one dashboard with a Gemini career coach, and a LangGraph skill-gap agent that compares your repositories with a job description and cites the exact lines that prove each skill.",
+    "description": "Pulls live GitHub and LeetCode stats into one dashboard with a Gemini career coach, plus a LangGraph skill-gap agent that compares a repository with a job description and cites the exact lines that prove each skill. The live demo still runs the earlier January 2026 version.",
     "points": [
-      "Skill-gap agent with a deterministic verifier: every claim must quote real code at the cited lines.",
-      "On the hard benchmark, F1 0.91 vs 0.77 for a single-prompt baseline; 8 of 8 prompt-injection attacks blocked.",
-      "Hybrid code search (Tree-sitter, BM25, pgvector), FastAPI REST API, tests and CI."
+      "Skill-gap agent (plan → retrieve → assess → verify → recommend) with a deterministic verifier: every claim must quote real code at the cited lines.",
+      "Hard benchmark: F1 0.91 vs 0.77 for a single-prompt baseline; all 72 cited code lines verified; 8 of 8 prompt-injection attacks blocked.",
+      "Hybrid code search (Tree-sitter, BM25, pgvector), FastAPI REST API, tests and CI against Postgres with a Docker build."
     ],
     "tech": [
       "Python",
@@ -63,12 +65,38 @@
       "Gemini",
       "FastAPI",
       "Gradio",
-      "PostgreSQL"
+      "pgvector"
     ],
     "category": "AI & Agents",
     "github": "https://github.com/SwarangiK-21/CodeSynapse",
     "demo": "https://huggingface.co/spaces/SwarangiK-21/CodeSynapse",
     "image": "assets/img/projects/codesynapse.jpg",
+    "status": "",
+    "featured": true,
+    "show": true
+  },
+  {
+    "title": "Peheraav AI: Your Wardrobe, Styled by AI",
+    "tagline": "Live full-stack app that builds outfits only from clothes you own",
+    "description": "Add photos of your own clothes once, then ask in English or Hinglish, by typing or voice. Peheraav builds up to 4 complete outfits from pieces you really own, explains why each one works, and says so honestly when something is missing. Live on Azure with personal accounts.",
+    "points": [
+      "Rule-based styling engine that never invents a piece you do not own.",
+      "Outfit boards from your own photos, with backgrounds removed in the browser (IS-Net + SegFormer on ONNX Runtime Web).",
+      "Wedding, festival and trip planners; weather-aware suggestions; wear stats, cost per wear and Shop Smart ideas; optional style profile.",
+      "Accounts with email confirmation and password reset; Azure + Caddy https; nightly off-site backups; 258 automated backend tests."
+    ],
+    "tech": [
+      "React",
+      "Vite",
+      "FastAPI",
+      "SQLite",
+      "ONNX Runtime Web",
+      "Azure"
+    ],
+    "category": "Full-Stack",
+    "github": "https://github.com/SwarangiK-21/Peheraav-YourWardrobeStyledByAI",
+    "demo": "https://peheraav-ai.eastasia.cloudapp.azure.com",
+    "image": "assets/img/projects/peheraav.webp",
     "status": "",
     "featured": true,
     "show": true
@@ -148,7 +176,7 @@
   {
     "title": "EduFlow ERP",
     "tagline": "AI-assisted internship & NOC/LOR approval workflow",
-    "description": "A working prototype that automates internship applications and NOC/LOR approvals through a structured chain: Class Teacher → HOD → TnP Head → IIIC Director, with analytics dashboards on top of the approved data.",
+    "description": "A prototype in progress that automates internship applications and NOC/LOR approvals through a structured chain: Class Teacher → HOD → TnP Head → IIIC Director, with analytics dashboards on top of the approved data. Uses dummy data only.",
     "points": [
       "Role-based student and faculty portals for applying, approving and reporting outcomes.",
       "SQL analytics views feeding KPI dashboards, with export for Power BI / Tableau.",
@@ -162,7 +190,7 @@
       "Plotly"
     ],
     "category": "AI & Agents",
-    "github": "",
+    "github": "https://github.com/SwarangiK-21/EduFlow-ERP",
     "demo": "",
     "image": "",
     "status": "In progress",
@@ -256,6 +284,29 @@
     "show": true
   },
   {
+    "title": "Coffee Shop Sales EDA",
+    "tagline": "Exploratory data analysis of 9,971 transactions in R",
+    "description": "Turns 9,971 coffee-shop transactions (5 US cities, 2021–2023) into findings on seasonality, city profitability, product mix, pricing and outliers.",
+    "points": [
+      "January is the clear revenue peak and February the lowest; Chicago leads total profit margin, Seattle trails.",
+      "Revenue spread evenly across 7 product categories; a few very large transactions in Austin and Chicago flagged for checking.",
+      "Data preparation and plots in R with dplyr, ggplot2 and lubridate."
+    ],
+    "tech": [
+      "R",
+      "tidyverse",
+      "ggplot2",
+      "EDA"
+    ],
+    "category": "Data & BI",
+    "github": "https://github.com/SwarangiK-21/DSA-Mini-Project",
+    "demo": "",
+    "image": "assets/img/projects/coffee-shop-eda.png",
+    "status": "",
+    "featured": false,
+    "show": true
+  },
+  {
     "title": "Secure Tool",
     "tagline": "Encryption & decryption app with a Tkinter GUI",
     "description": "A Python desktop application for encoding and decoding messages with a custom key, with user accounts, passkey strength checks and an action history.",
@@ -273,32 +324,6 @@
     "image": "",
     "status": "",
     "featured": false,
-    "show": true
-  },
-  {
-    "title": "Adaa: Personal Wardrobe Stylist",
-    "tagline": "Live full-stack app that builds outfits only from clothes you own",
-    "description": "Add photos of your own clothes once, then ask in English or Hinglish, by typing or voice. Adaa builds up to 4 complete outfits from pieces you actually own and explains why each one works. Includes wedding, festival and trip planners, and runs live on Azure with personal accounts.",
-    "points": [
-      "Rule-based styling engine that never invents a piece you do not own.",
-      "Outfit boards made from your own photos, with backgrounds removed in the browser (IS-Net + SegFormer on ONNX Runtime Web).",
-      "Weather-aware suggestions, wear stats, cost per wear and Shop Smart ideas.",
-      "Deployed on Azure with Caddy https and nightly off-site backups; 258 automated backend tests."
-    ],
-    "tech": [
-      "React",
-      "Vite",
-      "FastAPI",
-      "SQLite",
-      "ONNX Runtime Web",
-      "Azure"
-    ],
-    "category": "Full-Stack",
-    "github": "https://github.com/SwarangiK-21/Adaa-",
-    "demo": "https://adaa-every-outfit-tells-your-adaa.eastasia.cloudapp.azure.com",
-    "image": "assets/img/projects/adaa.jpg",
-    "status": "",
-    "featured": true,
     "show": true
   }
 ]

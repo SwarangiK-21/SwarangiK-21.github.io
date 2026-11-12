@@ -251,9 +251,10 @@ button { font: inherit; color: inherit; }
 .cover-art .cover-title { position: relative; font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; color: var(--text); max-width: 85%; line-height: 1.15; }
 .badges { position: absolute; top: 12px; left: 12px; display: flex; gap: 6px; z-index: 1; }
 .badge { font-size: .72rem; font-weight: 600; padding: 4px 10px; border-radius: 999px; backdrop-filter: blur(6px); }
-.badge-featured { background: color-mix(in srgb, var(--highlight) 25%, transparent); color: var(--highlight); border: 1px solid color-mix(in srgb, var(--highlight) 50%, transparent); }
-.badge-status { background: color-mix(in srgb, var(--accent-2) 22%, transparent); color: var(--accent-2); border: 1px solid color-mix(in srgb, var(--accent-2) 50%, transparent); }
-.badge-live { background: color-mix(in srgb, #22c55e 22%, transparent); color: #22c55e; border: 1px solid color-mix(in srgb, #22c55e 50%, transparent); }
+/* Badges sit on screenshots of any colour, so they use a fixed dark backing and bright text in both themes */
+.badge-featured { background: rgba(7, 11, 22, 0.82); color: #f5b14c; border: 1px solid rgba(245, 177, 76, 0.6); }
+.badge-status { background: rgba(7, 11, 22, 0.82); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.6); }
+.badge-live { background: rgba(7, 11, 22, 0.82); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.6); }
 .project-body { display: flex; flex-direction: column; gap: 12px; padding: 22px; flex: 1; }
 .project-category { font-family: var(--font-mono); font-size: .75rem; color: var(--accent); text-transform: uppercase; letter-spacing: .06em; margin: 0; }
 .project-body h3 { font-size: 1.2rem; }

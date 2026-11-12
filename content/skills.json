@@ -1,72 +1,87 @@
 [
   {
-    "group": "Programming",
+    "group": "Languages",
     "icon": "code",
     "items": [
       "Python",
       "SQL (CTEs, Window Functions)",
-      "C++",
+      "JavaScript",
       "R",
+      "C++",
       "Shell Scripting"
     ]
   },
   {
-    "group": "Data Engineering",
-    "icon": "database",
-    "items": [
-      "ETL / ELT Pipelines",
-      "Star & Snowflake Schemas",
-      "MySQL",
-      "PostgreSQL",
-      "SQLite",
-      "REST APIs"
-    ]
-  },
-  {
-    "group": "AI & Analytics",
+    "group": "GenAI & Agentic AI",
     "icon": "spark",
     "items": [
-      "Agentic AI",
       "LangGraph",
-      "RAG",
+      "RAG (hybrid retrieval)",
+      "Gemini",
+      "Ollama",
+      "Pydantic",
+      "Tavily",
       "Prompt Engineering",
-      "LLM Automation",
-      "NLP",
-      "Statistical Modeling",
-      "EDA",
       "n8n"
     ]
   },
   {
-    "group": "Python Libraries",
-    "icon": "layers",
+    "group": "ML & Data Science",
+    "icon": "cpu",
     "items": [
+      "Scikit-learn",
       "Pandas",
       "NumPy",
-      "Scikit-learn",
-      "Plotly",
-      "Streamlit",
-      "Gradio"
+      "ONNX Runtime",
+      "Jupyter",
+      "EDA",
+      "Statistical Modeling"
     ]
   },
   {
-    "group": "BI & Visualisation",
+    "group": "Data Viz & BI",
     "icon": "chart",
     "items": [
       "Power BI (DAX, Power Query)",
       "Tableau",
-      "MS Excel (VBA)"
+      "MS Excel (VBA)",
+      "Plotly",
+      "Streamlit"
     ]
   },
   {
-    "group": "DevOps & Tools",
+    "group": "Backend & Data",
+    "icon": "database",
+    "items": [
+      "FastAPI",
+      "PostgreSQL",
+      "Supabase",
+      "SQLAlchemy",
+      "SQLite",
+      "MySQL",
+      "ETL / ELT Pipelines",
+      "Star & Snowflake Schemas"
+    ]
+  },
+  {
+    "group": "Frontend",
+    "icon": "layers",
+    "items": [
+      "React",
+      "Vite",
+      "Gradio"
+    ]
+  },
+  {
+    "group": "Engineering",
     "icon": "tools",
     "items": [
-      "Git / GitHub",
       "Docker",
       "GitHub Actions",
+      "pytest",
+      "Git / GitHub",
       "Render",
-      "Hugging Face Spaces"
+      "Azure"
     ]
   }
 ]

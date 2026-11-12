@@ -79,7 +79,7 @@ Open `content/projects.json` and copy an existing block, from `{` to `},`, then 
 },
 ```
 
-- `category` must be one of: `AI & Agents`, `Data & BI`, `Machine Learning`, `Other`.
+- `category` must be one of: `AI & Agents`, `Full-Stack`, `Data & BI`, `Machine Learning`, `Other`.
 - Leave `demo`, `github` or `image` as `""` when you don't have one. The button or picture is then hidden,
   and a coloured cover is drawn automatically.
 - `"featured": true` puts the project first, with a ★ badge.

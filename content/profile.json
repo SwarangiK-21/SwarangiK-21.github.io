@@ -2,21 +2,21 @@
   "name": "Swarangi Kothawade",
   "fullName": "Swarangi Vijay Kothawade",
   "initials": "SK",
-  "headline": "Data Analyst & AI Developer",
+  "headline": "AI / ML & Data Science Engineer",
   "typingLines": [
-    "I build data pipelines.",
+    "I build grounded LLM apps.",
+    "I build agentic RAG systems.",
     "I design BI dashboards.",
-    "I build agentic AI apps.",
     "I turn raw data into decisions."
   ],
-  "intro": "Final-year B.Tech student in Computer Science (AI & Data Science) and Data Analyst Intern at Krios Info Solutions. I build dashboards, data pipelines and AI-powered tools that turn messy data into clear decisions.",
+  "intro": "Final-year B.Tech student in Computer Science (AI & Data Science) and Data Analyst Intern at Krios Info Solutions. I build grounded LLM applications, agentic RAG systems and data products that are measured, tested and honest about their limits.",
   "location": "Pune, Maharashtra, India",
   "photo": "assets/img/profile.jpg",
   "openTo": "Open to data & AI internships · 2027 full-time roles",
   "about": [
-    "I'm a Computer Science (AI & Data Science) student at Pimpri Chinchwad University, Pune, graduating in 2027. I currently work as a Data Analyst Intern at Krios Info Solutions, where I design Tableau and Power BI dashboards for enterprise clients and build the Python and SQL pipelines behind them.",
-    "Outside work I build end-to-end projects: real-time analytics dashboards, anomaly detection services packaged with Docker, and agentic AI applications using LLMs, retrieval (RAG) and workflow automation. I enjoy taking a project from raw data all the way to a deployed app that people can actually use.",
-    "I'm looking for opportunities in data analytics, data engineering and applied AI, where I can work on real business problems and keep learning from experienced teams."
+    "I'm a Computer Science (AI & Data Science) student at Pimpri Chinchwad University, Pune, graduating in 2027. I currently work as a Data Analyst Intern at Krios Info Solutions, where I build Tableau and Power BI dashboards and the Python and SQL pipelines behind them.",
+    "Outside work I build end-to-end projects: agentic AI with LangGraph, hybrid retrieval (BM25 + dense + reranking) with citation checking, FastAPI backends on PostgreSQL / Supabase, and full-stack apps deployed to the cloud. I care about measuring what I build: benchmarks, automated tests, CI and honest notes on limitations.",
+    "I'm looking for opportunities in applied AI, data science and data analytics, where I can work on real problems and keep learning from experienced teams."
   ],
   "highlights": [
     {

@@ -14,23 +14,30 @@
     "link": "https://github.com/SwarangiK-21/SENTINEL-Urban-Conflict-Resolver"
   },
   {
-    "title": "UIDAI Hackathon 2026",
-    "detail": "Successfully completed the hackathon (Team UIDAI_4318). Built Project Drishti, a governance dashboard for Aadhaar data.",
+    "title": "UIDAI & MeitY Hackathon 2026",
+    "detail": "Successfully completed the hackathon (Team UIDAI_4318). Built Project Drishti, an analysis of about 4.9 million aggregated Aadhaar operations records.",
     "year": "2026",
     "icon": "trophy",
     "link": "https://github.com/SwarangiK-21/UIDAI-Hackathon-2026"
   },
   {
     "title": "Srijan Hackathon",
-    "detail": "Successfully completed the hackathon. Built KavachAI, an on-device shield against AI voice-spoofing calls.",
+    "detail": "Successfully completed the hackathon. Built KavachAI, which flags suspicious calls from known contacts using behavioural anomaly detection.",
     "year": "",
     "icon": "trophy",
     "link": "https://github.com/SwarangiK-21/KavachAI-Srijan_Hackathon"
   },
   {
-    "title": "Python & DSA Training",
-    "detail": "Completed intensive Python and Data Structures & Algorithms training via Samsung Innovation Campus (SIC).",
+    "title": "Solve for Goa Hackathon",
+    "detail": "Participant.",
     "year": "",
+    "icon": "trophy",
+    "link": ""
+  },
+  {
+    "title": "Samsung Innovation Campus (SIC)",
+    "detail": "Completed the AI, Coding & Problem Solving programme, including intensive Python and Data Structures & Algorithms training.",
+    "year": "2026",
     "icon": "book",
     "link": ""
   },
