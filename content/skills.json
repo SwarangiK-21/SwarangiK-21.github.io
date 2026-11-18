@@ -19,6 +19,7 @@
       "RAG (hybrid retrieval)",
       "Gemini",
       "Ollama",
+      "MCP",
       "Pydantic",
       "Tavily",
       "Prompt Engineering",
@@ -81,7 +82,8 @@
       "pytest",
       "Git / GitHub",
       "Render",
-      "Azure"
+      "Azure",
+      "Hugging Face Spaces"
     ]
   }
 ]

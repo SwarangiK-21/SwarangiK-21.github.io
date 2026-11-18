@@ -28,49 +28,52 @@
   },
   {
     "title": "LUMINA: AI DevOps Troubleshooter",
-    "tagline": "Diagnose, research, propose, review",
-    "description": "An agentic AI system for DevOps, cloud and software errors. A LangGraph pipeline classifies the error, researches current sources with Tavily, drafts a fix with Gemini, and a reviewer step sends weak drafts back for more research.",
+    "tagline": "Diagnose, research, propose, review: safely",
+    "description": "A LangGraph agent for DevOps, cloud and software errors. It classifies the error, researches current sources, drafts a cited fix, and sends it through fixed safety rules and an AI reviewer until it passes. It proposes fixes; it never runs them.",
     "points": [
-      "LangGraph state machine: Classifier → Researcher → Coder → Reviewer → Router, with a feedback loop.",
-      "Web grounding with Tavily; Streamlit interface.",
-      "Upgrade in review on the phase branches: package structure, tests with fake LLM/search, Docker, CI and a 50-case hand-labelled benchmark with rule-based scoring."
+      "50-case hand-labelled benchmark: root cause found in 50/50, citations valid in 49/50, safe on 11/12 trap cases.",
+      "The benchmark caught the AI reviewer approving an unsafe fix (--insecure-skip-tls-verify), so 13 fixed safety rules now run before it; over all 50 answers they flag only that case.",
+      "Live step-by-step progress in the Streamlit UI; 82 tests with a fake LLM and search, Docker and CI."
     ],
     "tech": [
       "Python",
       "LangGraph",
       "Gemini",
       "Tavily",
-      "Streamlit"
+      "Streamlit",
+      "pytest",
+      "GitHub Actions"
     ],
     "category": "AI & Agents",
     "github": "https://github.com/SwarangiK-21/Lumina-AI-DevOps",
     "demo": "",
-    "image": "",
-    "status": "Upgrade in review",
+    "image": "assets/img/projects/lumina.jpg",
+    "status": "",
     "featured": true,
     "show": true
   },
   {
     "title": "CodeSynapse: AI Career Architect",
-    "tagline": "AI-powered career analytics dashboard for CS students",
-    "description": "Pulls live GitHub and LeetCode stats into one dashboard with a Gemini career coach, plus a LangGraph skill-gap agent that compares a repository with a job description and cites the exact lines that prove each skill. The live demo still runs the earlier January 2026 version.",
+    "tagline": "Checks your real code against a job description or your resume",
+    "description": "A LangGraph agent that compares your repositories with a job description, or with the claims on your own resume, and proves every claim with line-level evidence, rejecting any claim the code does not support. Plus live GitHub and LeetCode analytics and a Gemini career coach.",
     "points": [
-      "Skill-gap agent (plan → retrieve → assess → verify → recommend) with a deterministic verifier: every claim must quote real code at the cited lines.",
-      "Hard benchmark: F1 0.91 vs 0.77 for a single-prompt baseline; all 72 cited code lines verified; 8 of 8 prompt-injection attacks blocked.",
-      "Hybrid code search (Tree-sitter, BM25, pgvector), FastAPI REST API, tests and CI against Postgres with a Docker build."
+      "Hard benchmark: F1 0.96 vs 0.81 for a single-prompt baseline; 98/98 cited code lines verified; 8 of 8 prompt-injection attacks blocked.",
+      "Measured its own search (Success@k, MRR), found the hybrid ranking scoring below plain vector search, and tuned the fusion to lift top-1 hits from 0.30 to 0.49.",
+      "Resume claim checker, an MCP server for AI assistants such as Claude and Cursor, background jobs and rate limits; 291 tests, auto-deployed from CI."
     ],
     "tech": [
       "Python",
       "LangGraph",
       "Gemini",
       "FastAPI",
-      "Gradio",
-      "pgvector"
+      "pgvector",
+      "MCP",
+      "Supabase"
     ],
     "category": "AI & Agents",
     "github": "https://github.com/SwarangiK-21/CodeSynapse",
     "demo": "https://huggingface.co/spaces/SwarangiK-21/CodeSynapse",
-    "image": "assets/img/projects/codesynapse.jpg",
+    "image": "assets/img/projects/codesynapse.png",
     "status": "",
     "featured": true,
     "show": true
