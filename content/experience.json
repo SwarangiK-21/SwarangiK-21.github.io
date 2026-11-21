@@ -7,11 +7,10 @@
     "end": "Nov 2026",
     "type": "Internship",
     "points": [
-      "Designed and developed Tableau and Power BI dashboards for enterprise clients, turning complex business data into KPI-driven insights.",
-      "Contributed to solution design, translating client requirements into analytical solutions.",
-      "Built Python/SQL data pipelines for data cleaning, transformation, validation and automated reporting.",
-      "Collaborated with clients and cross-functional teams to understand business processes and deliver tailored solutions.",
-      "Automated recurring reporting and data workflows, improving efficiency and reliability."
+      "Designed and built Tableau and Power BI dashboards for enterprise manufacturing clients, turning operational and business data into KPI views for decision-makers.",
+      "Handled solution design for client engagements: gathered requirements from client teams and translated them into dashboard designs, data models and reporting workflows, working with internal cross-functional teams.",
+      "Built Python and SQL pipelines for data cleaning, transformation and validation behind these reports.",
+      "Automated recurring reporting workflows to reduce manual effort."
     ],
     "tech": [
       "Tableau",
