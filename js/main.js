@@ -116,6 +116,10 @@ function renderProfile(p, projects) {
     setAll('data-resume-download', (el) => (el.href = r.file));
     setAll('data-resume-view', (el) => (el.href = r.file));
     $('[data-resume-frame]').src = `${r.file}#view=FitH`;
+  } else {
+    // No public resume yet: hide the section and every resume button
+    $('#resume')?.setAttribute('hidden', '');
+    $$('.nav-resume, [data-resume-download], [data-resume-view]').forEach((el) => el.setAttribute('hidden', ''));
   }
   $('[data-resume-updated]').textContent = r.updated ? `Last updated: ${r.updated}` : '';
 

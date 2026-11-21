@@ -2,21 +2,21 @@
   "name": "Swarangi Kothawade",
   "fullName": "Swarangi Vijay Kothawade",
   "initials": "SK",
-  "headline": "AI / ML & Data Science Engineer",
+  "headline": "Data Analytics · Data Engineering · AI",
   "typingLines": [
-    "I build grounded LLM apps.",
-    "I build agentic RAG systems.",
+    "I build data pipelines.",
     "I design BI dashboards.",
+    "I build grounded LLM apps.",
     "I turn raw data into decisions."
   ],
-  "intro": "Final-year B.Tech student in Computer Science (AI & Data Science) and Data Analyst Intern at Krios Info Solutions. I build grounded LLM applications, agentic RAG systems and data products that are measured, tested and honest about their limits.",
+  "intro": "Final-year B.Tech student in Computer Science (AI & Data Science) who completed a six-month Data Analyst internship at Krios Info Solutions. I build data pipelines, BI dashboards and grounded AI applications that are measured, tested and honest about their limits.",
   "location": "Pune, Maharashtra, India",
   "photo": "assets/img/profile.jpg",
-  "openTo": "Open to data & AI internships · 2027 full-time roles",
+  "openTo": "Open to Data Analyst, Data Engineer and AI/ML roles · Graduating 2027",
   "about": [
-    "I'm a Computer Science (AI & Data Science) student at Pimpri Chinchwad University, Pune, graduating in 2027. I currently work as a Data Analyst Intern at Krios Info Solutions, where I build Tableau and Power BI dashboards and the Python and SQL pipelines behind them.",
-    "Outside work I build end-to-end projects: agentic AI with LangGraph, hybrid retrieval (BM25 + dense + reranking) with citation checking, FastAPI backends on PostgreSQL / Supabase, and full-stack apps deployed to the cloud. I care about measuring what I build: benchmarks, automated tests, CI and honest notes on limitations.",
-    "I'm looking for opportunities in applied AI, data science and data analytics, where I can work on real problems and keep learning from experienced teams."
+    "I'm a final-year Computer Science (AI & Data Science) student at Pimpri Chinchwad University, Pune, graduating in 2027 with a CGPA of 8.3. From May to November 2026 I worked as a Data Analyst Intern at Krios Info Solutions, building Tableau and Power BI dashboards for enterprise clients and the Python and SQL pipelines that clean and validate the data behind them.",
+    "Outside work I build end-to-end projects: data pipelines and BI dashboards, agentic AI with LangGraph, hybrid retrieval (BM25 + dense + reranking) with citation checking, FastAPI backends on PostgreSQL / Supabase, and full-stack apps deployed to the cloud. I care about measuring what I build: benchmarks, automated tests, CI and honest notes on limitations.",
+    "I'm looking for full-time roles in data analytics, data engineering and applied AI, where I can work on real business problems and keep learning from experienced teams."
   ],
   "highlights": [
     {
@@ -37,8 +37,8 @@
     }
   ],
   "resume": {
-    "file": "assets/resume/Swarangi_Kothawade_Resume.pdf",
-    "updated": "October 2026"
+    "file": "",
+    "updated": ""
   },
   "socials": [
     {

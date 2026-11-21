@@ -4,14 +4,14 @@
     "company": "Krios Info Solutions Pvt. Ltd.",
     "location": "Pune, India",
     "start": "May 2026",
-    "end": "Present",
+    "end": "Nov 2026",
     "type": "Internship",
     "points": [
-      "Design and develop Tableau and Power BI dashboards for enterprise clients, turning complex business data into KPI-driven insights.",
-      "Contribute to solution design: translating client requirements into analytical solutions.",
-      "Build Python/SQL data pipelines for data cleaning, transformation, validation and automated reporting workflows.",
-      "Collaborate with clients and cross-functional teams to understand business processes and deliver tailored solutions.",
-      "Automate recurring reporting and data workflows, improving efficiency and reliability."
+      "Designed and developed Tableau and Power BI dashboards for enterprise clients, turning complex business data into KPI-driven insights.",
+      "Contributed to solution design, translating client requirements into analytical solutions.",
+      "Built Python/SQL data pipelines for data cleaning, transformation, validation and automated reporting.",
+      "Collaborated with clients and cross-functional teams to understand business processes and deliver tailored solutions.",
+      "Automated recurring reporting and data workflows, improving efficiency and reliability."
     ],
     "tech": [
       "Tableau",
